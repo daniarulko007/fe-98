@@ -45,6 +45,8 @@ img {
 .header-container {
   display: flex;
   gap: 90px;
+  align-items: center;
+
 }
 .header-navigation {
   display: flex;
