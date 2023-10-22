@@ -79,15 +79,73 @@
             ></a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">0</button>
+      </div>
+
+      <div class="mob-menu is-open">
+        <div>
+          <button type="button" class="menu-close-btn">X</button>
+          <ul class="mob-menu list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Home</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#made">How it’s made?</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#loved">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="mob-soc list">
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+            >
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook"
+              ><svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="twitter"
+              ><svg class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to<br />
-            our finest ingredients for a moment of pure delight!
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
           </h1>
           <div class="hero-buttons">
             <button class="hero-buy-btn" type="button">Buy now</button>
@@ -95,8 +153,9 @@
             <a href="#footer" class="hero-bottom-btn link">scroll down</a>
           </div>
         </div>
-      </section>
-      <section class="features">
+      </section> -->
+
+      <!-- <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list list">
@@ -145,8 +204,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="taste">
+      </section> -->
+
+      <!-- <section class="taste">
         <div class="container">
           <h2 class="taste-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span>SENSATION
@@ -224,18 +284,34 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
       <section id="made" class="made">
         <div class="container">
           <h2 class="made-title">hOW IT’S <span>made</span>?</h2>
           <div class="made-wrap">
-            <img
-              src="./images/made-img.jpg"
-              alt="liquid chocolate"
-              width="600"
-              height="400"
-              class="made-img"
-            />
+            <picture class="made-picture">
+              <source
+                srcset="./images/made-img.jpeg 1x, made-img-2x.jpeg 2x"
+                media="(min-width: 1166px)"
+              />
+              <source
+                srcset="./images/made-img-tab.jpeg 1x, made-img-tab-2x.jpeg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/made-img-mob.jpeg 1x, made-img-mob-2x.jpeg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/made-img-tab.jpeg"
+                alt="liquid chocolate"
+                width="614"
+                height="400"
+                class="made-img"
+              />
+            </picture>
+
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -277,12 +353,17 @@
           </div>
         </div>
       </section>
+
       <section class="products">
         <div class="container">
           <h2 class="products-title">Our <span>pRODUCTS</span></h2>
           <ul class="products-list list">
             <li class="products-item">
               <img
+                srcset="
+                  ./images/products-img-1-min.jpg 1x,
+                  ./images/products-img-1-2x.jpeg 2x
+                "
                 src="./images/products-img-1-min.jpg"
                 alt="orange"
                 width="230"
@@ -380,6 +461,7 @@
           </ul>
         </div>
       </section>
+
       <section class="sellers">
         <div class="container">
           <h2 class="sellers-title"><span>tOp</span>Sellers</h2>
@@ -447,6 +529,7 @@
           </ul>
         </div>
       </section>
+
       <section id="loved" class="loved">
         <div class="container">
           <h2 class="loved-title"><span>chocolate</span> is loved</h2>
@@ -501,7 +584,7 @@
       </section>
     </main>
 
-    <footer id="footer" class="footer">
+    <!-- <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-text">
@@ -594,9 +677,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -687,6 +770,6 @@
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
